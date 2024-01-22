@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Tour and Travels</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        .logo {
+            height: 50px;
+            width: 90px;
+            margin-right: auto;
+            border: 0px;
+            display: block;
+            margin-left: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .logo .right {
+            position: sticky;
+        }
+
+        h6 {
+            padding: 0px;
+            bottom: 0px;
+            margin-left: -30px;
+            margin-top: 0px;
+            width: 170px;
+            display: flex;
+            justify-content: center;
+            font-family: Salsa;
+            font-weight: 100;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 90px;
+            margin-left: 0px;
+            border: 0px;
+            display: block;
+            object-fit: cover;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            justify-content: space-around;
+            background-color: white;
+            width: 100%;
+            height: 72px;
+        }
+
+        nav .navb {
+            display: flex;
+            justify-content: end;
+            text-align: right;
+            gap: 20px;
+
+        }
+
+        nav .navb li {
+            list-style: none;
+            display: flex;
+            align-items: end;
+            font-family: Poppins;
+        }
+
+        .navb li:hover {
+
+            background-color: #dbe1e7;
+        }
+
+        .main {
+            font-family: poppins;
+            justify-content: center;
+            margin: 3px;
+            padding: 3px;
+            /* background-image:url("himalaya-4039495_640.jpg") ; */
+        }
+
+        .btn {
+            border: 3px solid #4d6d90;
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            background-color: #4d6d90;
+            cursor: pointer;
+        }
+
+        .msg {
+            border: 3px solid #b3914d;
+            border-radius: 3px;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            background-color: #b3914d;
+        }
+
+        section video {
+            position: absolute;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+            width: 1680px;
+            height: 60%;
+            z-index: -1;
+            opacity: 1;
+            margin-top: 56px;
+        }
+
+        .main .text {
+            justify-content: left;
+            color: white;
+
+            width: 90vw;
+            font-family: Outfit;
+            text-decoration: solid;
+            font-weight: bolder;
+            font-size: 30px;
+            margin-top: 223px;
+            text-align: center;
+            height: 139px;
+            margin-left: 118px;
+        }
+
+        .new-section {
+            display: inline-block;
+            text-align: left;
+            margin: 53px 218px;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .new-section img {
+            width: 334px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .cta {
+
+            text-align: center;
+            margin-top: -7%;
+            font-family: poppins;
+        }
+
+        #heading {
+            margin-top: 148px;
+            padding: 12px;
+            font-family: poppins;
+            font-size: 27px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #4c6784;
+
+            height: 334px;
+            width: 334px;
+            border-radius: 7px;
+            margin-left: 15px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .leh {
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+            text-align: center;
+            margin-top: 19px;
+            height: 34px;
+
+            font-size: 25px;
+            font-family: Salsa;
+        }
+
+        .new-section img {
+
+            height: 250px;
+            border-radius: 7px;
+            margin-top: -31px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-section {
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            margin-left: 185px;
+        }
+
+        .Quick {
+            font-family: poppins;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        form fieldset {
+            background-color: #263d55;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Alpine Tours and Travels Co">
+                <h6>Alpine Tours and Travels Co.</h6>
+            </div>
+
+            <ul class="navb">
+                <li>Home</li>
+                <li>Destinations <img src="down-arrow.png " height="23px" alt="down arrow"></li>
+                <li>Tours <img src="down-arrow.png " height="23px" alt="down arrow"> </li>
+
+                <li>About Us</li>
+                <li>Contact</li>
+                <button class="btn">Sign In</button>
+
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <section class="main">
+        <video id="vdo" muted loop src="himvideo.mp4" type="video/mp4" autoplay></video>
+
+        <div class="text"><b><strong>
+                    <h1> Alpine Tours and Travels</h1>
+
+                </strong>
+
+            </b> </div>
+    </section>
+
+    <h1 id="heading">Our Packages</h1>
+    <div class="new-section">
+
+        <div class="card">
+            <div class="lehimg">
+                <img src="download (1).jpeg" alt="leh ladakh">
+                <h3 class="leh"> Leh Ladakh </h3>
+                <h3 class="leh">Starting at ₹9,999 </h3>
+
+
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="lehimg">
+                <img src="download.jpeg" alt="leh ladakh">
+                <h3 class="leh"> Himachal Pradesh </h3>
+                <h3 class="leh">Starting at ₹8,999 </h3>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="lehimg">
+                <img src="uk.jpg" alt="leh ladakh">
+                <h3 class="leh"> Uttarakhand </h3>
+                <h3 class="leh">Starting at ₹7,999 </h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta">
+        <h1 id="heading">Ready for Your Mountain Adventure?</h1>
+        <h3>Explore the breathtaking beauty of the mountains with our expert guides. Embark on an
+            unforgettable
+            adventure!</h3>
+        <br>
+
+        <h2>Book now and make memories that will last a lifetime!</h2>
+        <!-- Include a call-to-action button or link to the booking page -->
+    </div>
+
+    <!-- <div class="form">
+        <form>
+            <fieldset>
+                <h3 class="Quick">Quick Enquiry</h3>
+                <div class="frm">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="frm">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="frm">
+
+                    <input type="text" placeholder="Contact Number">
+                </div>
+
+                <textarea name="address" id="ad" cols="19" rows="7" placeholder="Leave a message for us"></textarea>
+                <div class="frm">
+                    <button class="msg">Send Message</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div> -->
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@alpinetoursandtravels.com</p>
+                <p>Phone: +91 123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Address</h3>
+                <p>123 Mountain Street</p>
+                <p>Mussorie,Uttarakhand,India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <img src="instagram.svg" height="17px" alt="instagram">
+                <img src="facebook.svg" height="17px" alt="facebook">
+                <img src="twitter-x.svg" height="17px" alt="X">
+
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 <a href="">Alpine Tour and Travels Co. </a><br>
+        All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
