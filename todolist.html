@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        body {
+            font-family: poppins;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #54585c;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ecf0f1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: rgb(0,0,0);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+   
+        }
+
+        .task:hover {
+            background-color: #dfe6e9;
+        }
+
+        .task input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .task .status {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+        .task .actions {
+            display: flex;
+            align-items: center;
+        }
+        .task .actions button {
+            margin-left: 10px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .task .actions button.Remove {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .task .actions button.edit {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .p-bar {
+            height: 10px;
+            background-color: #bdc3c7;
+            margin-top: 20px;
+         
+        }
+
+        .p-bar-inner {
+            height: 100%;
+            width: 30%;
+            background-color: #3498db;
+        }
+    </style>
+    <title> Task 2 - To-Do List</title>
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+    <main>
+        <h2>Web Development</h2>
+        <ul>
+            <li class="task">
+                <input type="checkbox" id="task1">
+                <label for="task1">Designing Landing Page</label>
+                <div class="status">Priority: High | Deadline: 31-1-2024</div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="Remove">Remove</button>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task2" checked>
+                <label for="task2"> Learning Flexbox Concepts</label>
+                <div class="status">Priority: Medium | Deadline: 27-1-2024</div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="Remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+        <h2>Assignments</h2>
+        <ul>
+            <li class="task">
+                <input type="checkbox" id="task1">
+                <label for="task1">Statistics</label>
+                <div class="status">Priority: High | Deadline: 19-1-2024</div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="Remove">Remove</button>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task2" checked>
+                <label for="task2">DBMS Lab</label>
+                <div class="status">Priority: High| Deadline: 28-1-2024</div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="Remove">Remove</button>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task2" checked>
+                <label for="task2">Engineering Economics(Project)</label>
+                <div class="status">Priority: Low| Deadline: NA</div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="Remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+        <div class="p-bar">
+            <div class="p-bar-inner" style="width: 30%;"></div>
+        </div>
+    </main>
+</body>
+</html>
+
